@@ -31,6 +31,50 @@ body {
     }
   }
 }
+
+.carousel {
+  .carousel-inner {
+    .item {
+      height: 650px;
+      .slide1, .slide2, .slide3  {
+          height: 100%;
+          width:100%;
+          background-repeat: no-repeat;
+          //background-position: center;
+          background-size: cover;
+      }
+      .slide1 {
+          background-image: url('../images/01.jpg');        
+      }
+      .slide2 {
+          background-image: url('../images/02.jpg');        
+      }
+      .slide3 {
+        background-image: url('../images/03.jpg');
+        
+      }
+      .carousel-caption {
+        p {
+          display: block;
+        }
+        a {
+          position: relative;
+          width: 180px;
+          height: 45px;
+          margin-bottom: 10px;
+          span {
+            position: absolute;
+            top:50%;
+            left:50%;
+            font-size: 1.3em;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
