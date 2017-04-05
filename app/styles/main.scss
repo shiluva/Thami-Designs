@@ -14,8 +14,14 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image: linear-gradient(to right, #2e4350, #434343);
 }
 
+
+/* Override some bootstrap opinions here */
+.nav {
+  padding-right: 40px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -28,14 +34,16 @@ body {
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    line-height: 40px;
+  }
 }
 
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
+
 
 /* Custom page footer */
 .footer {
@@ -58,18 +66,19 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
 }
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
+
 
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+  p + h4 {
+    margin-top: 28px;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
